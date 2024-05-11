@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'PingFang SC Regular';
+  src: url('https://db.onlinewebfonts.com/t/2e8b8a5bb209daf0c8dd2f3a94c2b4e8.eot');
+  src: url('https://db.onlinewebfonts.com/t/2e8b8a5bb209daf0c8dd2f3a94c2b4e8.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://db.onlinewebfonts.com/t/2e8b8a5bb209daf0c8dd2f3a94c2b4e8.woff2')
+      format('woff2'),
+    url('https://db.onlinewebfonts.com/t/2e8b8a5bb209daf0c8dd2f3a94c2b4e8.woff')
+      format('woff'),
+    url('https://db.onlinewebfonts.com/t/2e8b8a5bb209daf0c8dd2f3a94c2b4e8.ttf')
+      format('truetype'),
+    url('https://db.onlinewebfonts.com/t/2e8b8a5bb209daf0c8dd2f3a94c2b4e8.svg#PingFang SC Regular')
+      format('svg');
+}
+
+.slider-wrapper {
+  font-size: 200px;
+  width: 100%;
+  position: relative;
+  height: 70px;
+}
+
+.slider-track {
+  position: absolute;
+  height: 15px;
+  width: 100%;
+  background: #f4f5f7;
+  border-radius: 20px;
+  top: calc((100% - 15px) / 2);
+
+  box-shadow: 0px -4px 10px 0px #00000026 inset, 0px 4px 4px 0px #ffffff inset;
+}
+
+.slider-track-fill {
+  box-sizing: border-box;
+  position: absolute;
+  height: 15px;
+  width: 100%;
+  border-radius: 12px;
+  top: calc((100% - 15px) / 2);
+
+  border: 1px solid #6dc5d980;
+  background: linear-gradient(270deg, #bee9e6 0%, #6dc5d9 100%);
+}
+
+.slider-button-wrapper {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+
+.inner {
+  position: absolute;
+  top: calc((70px - 43px) / 2);
+  left: calc((70px - 43px) / 2);
+  z-index: 6;
+  width: 43px;
+  height: 43px;
+  border-radius: 100%;
+  background: #f4f5f7;
+
+  border: 0.5px solid #d9d9d933;
+  box-shadow: 4px 4px 10px 0px #0000000d inset, -4px -4px 10px 0px #ffffff inset;
+}
+
+.outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background: #f4f5f7;
+  border: 1px solid #d9d9d966;
+  box-shadow: 4px 4px 10px 0px #00000033, 4px 4px 10px 0px #ffffff inset;
+}
+
+.ori-slider {
+  position: absolute;
+  z-index: 8;
+  width: 100%;
+}
+
+input[type='range'] {
+  opacity: 0;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 15px;
+  margin-top: calc((70px - 15px) / 2);
+  background: tomato;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  margin-top: calc((15px - 70px) / 2);
+  height: 70px;
+  width: 70px;
+  background: orange;
+  border-radius: 50%;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-title {
+  font-family: 'PingFang SC', 'PingFang SC Regular', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: left;
+
+  color: #5e5e5e;
+}
+
+.slider-value-wrapper {
+  font-family: Inter;
+  font-size: 72px;
+  color: #4999bc;
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 77.45px;
+  text-align: left;
+}
+
+.slider-value-wrapper span {
+  font-size: 32px;
+}
