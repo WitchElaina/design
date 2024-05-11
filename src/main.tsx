@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createHashRouter,
+} from 'react-router-dom';
 import ListPage from './pages/ListPage.tsx';
 import Timer from './demo/Timer.tsx';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <ListPage />,
